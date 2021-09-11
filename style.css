@@ -1,0 +1,442 @@
+@font-face{ 
+	font-family: 'Cantarell';
+	src: url('font/Cantarell-Regular-webfont.eot');
+	src: url('font/Cantarell-Regular-webfont.eot?iefix') format('eot'),
+	     url('font/Cantarell-Regular-webfont.woff') format('woff'),
+	     url('font/Cantarell-Regular-webfont.ttf') format('truetype'),
+	     url('font/Cantarell-Regular-webfont.svg#webfont') format('svg');
+}
+
+body
+{
+	font-family: Cantarell, Verdana, Arial,"Arial Black",Impact, sans-serif;
+	margin: 0 0 0 0;
+}
+
+
+/*
+gris #303030
+bleu foncé #77B5FE
+*/
+
+/* Navigation bar */
+.nav
+{
+	opacity: 1;
+	height: 80px;
+	width: 100%;
+	background-color: #202020;
+	color:  white;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.name
+{
+	width:  20%;
+	min-width: 250px;
+	font-size: 2em;
+	display: flex;
+	justify-content: center;
+	color: #77B5FE;
+}
+
+.contact
+{
+	width:  80%;
+	min-width: 300px;
+	display: flex;
+	justify-content: flex-end;
+	font-size: 1.5em;
+}
+
+.info
+{
+	color: white;
+	margin-right: 20px;
+	margin-left: 20px;
+	text-decoration: none;
+}
+
+.info:hover
+{
+	color: #77B5FE;
+}
+
+@media screen and (max-width:1000px)
+{
+	.contact 
+	{
+		flex-direction: column;
+		align-items: flex-end;
+	}
+}
+
+
+
+/* Head */
+.head
+{
+	height: 480px;
+	background-color: #303030;
+	background-image: url(image/test2.jpg);
+	display: flex;
+	justify-content: center;
+}
+
+
+
+.middleHead
+{
+	width: 60%;
+	margin-top: 80px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.rightHead
+{
+	width: 20%;
+	margin-top: 80px;
+}
+
+.leftHead
+{
+	width: 20%;
+	margin-top: 80px;
+	padding-top: 50px;
+}
+
+
+.pageTitle
+{
+	font-size: 8em;
+	color: white;
+	text-align: center;
+	padding-top: 20px;
+
+}
+
+.profile
+{
+	font-size: 2em;
+	color: white;
+	text-align: center;
+}
+
+.decouvrirButton
+{
+	width: 190px;
+	vertical-align: middle;
+	font-size: 2em;
+	font-weight: bold;
+	text-decoration: none;
+	color: white;
+	padding: 10px 10px 10px 10px;
+	margin: auto;
+	margin-top: 30px;
+	background-color: #77B5FE;
+	border-radius: 10px;
+	display: flex;
+	justify-content: space-around;
+}
+
+
+.decouvrirButton:hover
+{
+	background-color: #5795DE;
+}
+
+@media screen and (max-width:1550px)
+{
+	.leftHead 
+	{
+		display: none;
+	}
+	.middleHead
+	{
+		width: 100%;
+	}
+	.rightHead
+	{
+		display: none;
+	}
+}
+
+@media screen and (max-width:1000px)
+{
+	.head
+	{
+		height: 300px;
+	}
+	.middleHead
+	{
+		width: 100%;
+	}
+	.rightHead
+	{
+		display: none;
+	}
+	.pageTitle
+	{
+		font-size: 5em;
+	}
+
+	.profile
+	{
+		font-size: 1.5em;
+	}
+
+	.meContacterButton
+	{
+		font-size: 2em;
+	}
+}
+
+/* Section */
+
+section
+{
+	width: 1000px;
+	min-width: 800px;
+	margin: auto;
+}
+
+@media screen and (max-width:1000px)
+{
+	section
+	{
+		width: 95%;
+	}
+}
+
+/* ARTICLE 1 */
+
+.titreArticle
+{
+	color: white;
+	background-color: #303030;
+	padding: 10px 10px 10px 10px;
+	margin: 10px 0 10px 0;
+	border-radius: 10px;
+	text-align: center;
+	font-size: 2em;
+}
+
+.procedure
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+p
+{
+	font-size: 1.4em;
+}
+
+.etapeText
+{
+	
+}
+
+.step
+{
+	width: 100%;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: center;
+	align-items: center;
+}
+
+.item
+{
+	font-size: 2em;
+	text-align: center;
+}
+
+.etape
+{
+	width: 700px;
+	height: 180px;
+	border-radius: 2px;
+	padding: 0px 10px 0px 10px;	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.chevron
+{
+	margin: 10px 0 10px 0;
+}
+
+.etape1
+{
+	background-color: #FF6961;
+}
+
+.etape2
+{
+	background-color: #FFAB72;
+}
+
+.etape3
+{
+	background-color: #FDFD96;
+}
+
+.etape4
+{
+	background-color: #B0F2B6;
+}
+
+.titreItem
+{
+	height: 80px;
+	text-align: center;
+	font-size: 1.8em;
+	font-weight: bold;
+}
+
+.desciptif
+{
+	width: 700px;
+	height: 150px;
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 20px;
+}
+
+@media screen and (min-width:1000px)
+{
+	.desciptif
+	{
+		display: none;
+	}
+}
+
+@media screen and (max-width:1000px)
+{
+	.step
+	{
+		flex-direction: column-reverse;
+	}
+}
+
+/* Foot */
+
+.foot
+{
+	height: 200px;
+	background-color: #303030;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin: 0 0 0 0;
+	background-image: url("image/world.jpg");
+}
+
+.contactFoot
+{
+	font-size: 2em;
+	font-weight: bold;
+	color: white;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.mailFoot
+{
+	font-size: 1.5em;
+	color: white;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 40px;
+}
+
+.icons
+{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.icon
+{
+	width: 50px;
+	height: 50px;
+	margin: 10px 5px 10px 5px;
+	border-radius: 25px;
+}
+
+.facebook
+{
+	background-image: url(image/facebook_b.png);
+}
+
+.facebook:hover
+{
+	background-image: url(image/facebook.png);
+}
+
+.linkedin
+{
+	background-image: url(image/linkedin_b.png);
+}
+
+.linkedin:hover
+{
+	background-image: url(image/linkedin.png);
+}
+
+.twitter
+{
+	background-image: url(image/twitter_b.png);
+}
+
+.twitter:hover
+{
+	background-image: url(image/twitter.png);
+}
+
+.instagram
+{
+	background-image: url(image/instagram_b.png);
+}
+
+.instagram:hover
+{
+	background-image: url(image/instagram.png);
+}
+
+.youtube
+{
+	background-image: url(image/youtube_b.png);
+}
+
+.youtube:hover
+{
+	background-image: url(image/youtube.png);
+}
+
+/* AUTRE */
+
+.maj
+{
+	text-transform: uppercase;
+}
+
+.min
+{
+	text-transform: lowercase;
+}
