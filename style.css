@@ -126,6 +126,7 @@ bleu foncé #77B5FE
 {
 	background-image: url(image/banniere2bis.jpg);
 	background-origin: border-box;
+	background-position: center;
 	background-size: 100%, 100%, cover;
 	height: 1080px;
 	width: 100%;
