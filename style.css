@@ -347,14 +347,16 @@ p
 
 .foot
 {
-	height: 1000px;
+	height: 800px;
 	width: 100%;
 	background-color: #303030;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 	margin: 0 0 0 0;
-	background-image: url("image/world.jpg");
+	background-image: url("image/down.jpg");
+	background-position: center center;
+	background-size: cover;
 }
 
 .contactFoot
