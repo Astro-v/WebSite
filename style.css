@@ -7,6 +7,15 @@
 	     url('font/Cantarell-Regular-webfont.svg#webfont') format('svg');
 }
 
+@font-face{ 
+	font-family: 'Disco';
+	src: url('font/disco_regular_macroman/DISCO___-webfont.eot');
+	src: url('font/disco_regular_macroman/DISCO___-webfont.eot?iefix') format('eot'),
+	     url('font/disco_regular_macroman/DISCO___-webfont.woff') format('woff'),
+	     url('font/disco_regular_macroman/DISCO___-webfont.ttf') format('truetype'),
+	     url('font/disco_regular_macroman/DISCO___-webfont.svg#webfont') format('svg');
+}
+
 body
 {
 	font-family: Cantarell, Verdana, Arial,"Arial Black",Impact, sans-serif;
@@ -124,6 +133,7 @@ bleu foncé #77B5FE
 
 .profile
 {
+	font-family: Disco;
 	font-size: 2em;
 	color: white;
 	text-align: center;
