@@ -107,6 +107,12 @@ bleu foncé #77B5FE
 
 
 /* Head */
+
+.logo
+{
+	width: 400px;
+}
+
 .head
 {
 	height: 1000px;
@@ -124,7 +130,6 @@ bleu foncé #77B5FE
 .middleHead
 {
 	width: 100%;
-	margin-top: 250px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;

@@ -9,7 +9,7 @@ window.addEventListener('scroll', function() {
 		titreArticle[0].style.opacity = ((this.scrollY-450)/150).toString();
 	}
 	if (this.scrollY > 500 && this.scrollY < 900) {
-		texteArticle[0].style.marginTop = (1100-this.scrollY).toString()+'px';
+		texteArticle[0].style.marginTop = (925-this.scrollY).toString()+'px';
 	}
 	if (this.scrollY > 750 && this.scrollY < 900) {
 		texteArticle[0].style.opacity = (this.scrollY-750)/150;
