@@ -1,5 +1,6 @@
 let titreArticle = document.getElementsByClassName('titreArticle1');
 let texteArticle = document.getElementsByClassName('texte1');
+let background = document.getElementsByClassName('background_1');
 
 let dmc_setInterval_11;
 let dmc_setInterval_12;
@@ -39,8 +40,8 @@ window.addEventListener('scroll', function() {
 			}
 		},1);	
 	}
-	if (this.scrollY > 500 && this.scrollY < 900) {
-		texteArticle[0].style.marginTop = (925-this.scrollY).toString()+'px';
+	if (this.scrollY > 1100 && this.scrollY < 2400) {
+		background[0].style.marginTop = (this.scrollY-1080).toString();
 	}
 	if (this.scrollY > 750 && this.scrollY < 900) {
 		texteArticle[0].style.opacity = (this.scrollY-750)/150;

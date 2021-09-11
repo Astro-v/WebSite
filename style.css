@@ -117,6 +117,7 @@ bleu foncé #77B5FE
 {
 	height: 1080px;
 	width: 100%;
+	margin-bottom: 10px;
 	background-color: #303030;
 	background-image: url(image/test2.jpg);
 	display: flex;
@@ -124,7 +125,6 @@ bleu foncé #77B5FE
 	justify-content: flex-start;
 	align-items: center;
 }
-
 
 
 .middleHead
@@ -198,9 +198,9 @@ section
 article
 {
 	width: 100%;
- 	height: 1000px;
+ 	height: 2000px;
  	background-color: #DDDDDD;
- 	margin: 10px 0 0 0;
+ 	margin: 10px 0 10px 0;
 }
 
 .titreArticle1
@@ -224,6 +224,13 @@ article
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+
+.background_1
+{
+	background-color: blue;
+	display: flex;
+	flex-direction: column;
 }
 
 p
