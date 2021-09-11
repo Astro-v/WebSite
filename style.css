@@ -72,7 +72,7 @@ bleu foncé #77B5FE
 	font-size: 3em;
 	display: flex;
 	justify-content: center;
-	color: #77B5FE;
+	color: rgb(64, 64, 64);
 }
 
 .name:hover
@@ -124,7 +124,9 @@ bleu foncé #77B5FE
 
 .head
 {
-	background-image: url(image/banniere.jpg);
+	background-image: url(image/banniere2bis.jpg);
+	background-origin: border-box;
+	background-size: 100%, 100%, cover;
 	height: 1080px;
 	width: 100%;
 	background-repeat: no-repeat;
@@ -152,7 +154,7 @@ bleu foncé #77B5FE
 	width: 500;
 	font-family: Ostrich;
 	font-size: 7em;
-	color: white;
+	color: rgb(64, 64, 64);
 	text-align: center;
 	padding-top: 20px;
 
@@ -162,8 +164,9 @@ bleu foncé #77B5FE
 {
 	font-family: Disco, Verdana, sans-serif;
 	font-size: 1.5em;
-	color: white;
+	color: rgb(64, 64, 64);
 	text-align: center;
+	font-weight: bold;
 }
 
 .decouvrirButton
@@ -178,7 +181,7 @@ bleu foncé #77B5FE
 	padding: 10px 10px 10px 10px;
 	margin: auto;
 	margin-top: 30px;
-	background-color: #77B5FE;
+	background-color: rgb(64, 64, 64);
 	border-radius: 10px;
 	display: flex;
 	justify-content: space-around;
