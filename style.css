@@ -21,8 +21,16 @@
 	src: url('font/ostrich-sans/ostrich-regular.ttf') format('truetype');
 }
 
+@font-face{ 
+	font-family: 'Montserrat';
+	src: url('font/montserrat/Montserrat-Regular.otf') format('opentype');
+}
 
 
+.montserrat
+{
+	font-family: 'Montserrat', sans-serif;
+}
 
 
 body
@@ -118,7 +126,7 @@ bleu foncé #77B5FE
 	height: 1080px;
 	width: 100%;
 	background-color: #303030;
-	background-image: url(image/test2.jpg);
+	background-image: url(image/banniere.jpg);
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -205,6 +213,7 @@ article
 
 .titreArticle1
 {
+	font-family: Disco;
 	color: black;
 	padding: 10px 10px 10px 10px;
 	margin-top: 800px;
