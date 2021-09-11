@@ -121,13 +121,15 @@ bleu foncé #77B5FE
 	width: 400px;
 }
 
+
 .head
 {
+	background-image: url(image/banniere.jpg);
 	height: 1080px;
 	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
 	margin-bottom: 10px;
-	background-color: #303030;
-	background-image: url(image/banniere.jpg);
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
