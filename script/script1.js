@@ -5,6 +5,7 @@ let background = document.getElementsByClassName('background_1');
 let dmc_setInterval_11;
 let dmc_setInterval_12;
 let bool = true;
+background[0].style.marginTop = '0px';
 window.addEventListener('scroll', function() {
 	if (this.scrollY > 800 && bool) {
 		bool = false;
@@ -42,6 +43,7 @@ window.addEventListener('scroll', function() {
 	}
 	if (this.scrollY > 1100 && this.scrollY < 2400) {
 		background[0].style.marginTop = (this.scrollY-1080).toString();
+		console.log((this.scrollY-1080).toString());
 	}
 	if (this.scrollY > 750 && this.scrollY < 900) {
 		texteArticle[0].style.opacity = (this.scrollY-750)/150;
