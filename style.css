@@ -43,7 +43,7 @@ bleu foncé #77B5FE
 	opacity: 1;
 	height: 80px;
 	width: 100%;
-	background-color: #202020;
+	background-color: rgba(32,32,32,0);
 	color:  white;
 	position: fixed;
 	top: 0px;
@@ -100,11 +100,13 @@ bleu foncé #77B5FE
 /* Head */
 .head
 {
-	height: 480px;
+	height: 1000px;
 	background-color: #303030;
 	background-image: url(image/test2.jpg);
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 }
 
 
@@ -237,6 +239,11 @@ section
 }
 
 /* ARTICLE 1 */
+
+article
+{
+ 	height: 1000px;
+}
 
 .titreArticle
 {
