@@ -353,7 +353,7 @@ p
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	margin: 0 0 0 0;
+	margin-bottom: 10px;
 	background-image: url("image/down.jpg");
 	background-position: center center;
 	background-size: cover;
