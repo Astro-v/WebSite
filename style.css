@@ -1,10 +1,10 @@
 @font-face{ 
 	font-family: 'Cantarell';
-	src: url('font/Cantarell-Regular-webfont.eot');
-	src: url('font/Cantarell-Regular-webfont.eot?iefix') format('eot'),
-	     url('font/Cantarell-Regular-webfont.woff') format('woff'),
-	     url('font/Cantarell-Regular-webfont.ttf') format('truetype'),
-	     url('font/Cantarell-Regular-webfont.svg#webfont') format('svg');
+	src: url('font/Cantarell-Regular-webfont/Cantarell-Regular-webfont.eot');
+	src: url('font/Cantarell-Regular-webfont/Cantarell-Regular-webfont.eot?iefix') format('eot'),
+	     url('font/Cantarell-Regular-webfont/Cantarell-Regular-webfont.woff') format('woff'),
+	     url('font/Cantarell-Regular-webfont/Cantarell-Regular-webfont.ttf') format('truetype'),
+	     url('font/Cantarell-Regular-webfont/Cantarell-Regular-webfont.svg#webfont') format('svg');
 }
 
 @font-face{ 
@@ -15,6 +15,15 @@
 	     url('font/disco_regular_macroman/DISCO___-webfont.ttf') format('truetype'),
 	     url('font/disco_regular_macroman/DISCO___-webfont.svg#webfont') format('svg');
 }
+
+@font-face{ 
+	font-family: 'Ostrich';
+	src: url('font/ostrich-sans/ostrich-regular.ttf') format('truetype');
+}
+
+
+
+
 
 body
 {
@@ -46,6 +55,7 @@ bleu foncé #77B5FE
 
 .name
 {
+	font-family: Ostrich;
 	width:  20%;
 	min-width: 250px;
 	font-size: 2em;
@@ -124,7 +134,8 @@ bleu foncé #77B5FE
 
 .pageTitle
 {
-	font-size: 8em;
+	font-family: Ostrich;
+	font-size: 7em;
 	color: white;
 	text-align: center;
 	padding-top: 20px;
@@ -133,7 +144,7 @@ bleu foncé #77B5FE
 
 .profile
 {
-	font-family: Disco;
+	font-family: Disco, Verdana, sans-serif;
 	font-size: 1.5em;
 	color: white;
 	text-align: center;
