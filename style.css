@@ -92,10 +92,10 @@ bleu foncé #77B5FE
 
 .info
 {
-	color: white;
 	margin-right: 20px;
 	margin-left: 20px;
 	text-decoration: none;
+	color: rgb(64, 64, 64);
 }
 
 .info:hover
