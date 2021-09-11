@@ -42,7 +42,7 @@ window.addEventListener('scroll', function() {
 			}
 		},1);	
 	}
-	if (this.scrollY >= screenH-80 && this.scrollY < screenH+screenH+20) {
+	if (this.scrollY >= screenH-80 && this.scrollY < screenH+screenH-80) {
 		article[0].style.marginTop = (this.scrollY-screenH+80).toString()+'px';
 	} else if (this.scrollY < screenH-80) {
 		article[0].style.marginTop = '0px';

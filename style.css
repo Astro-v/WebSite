@@ -353,7 +353,7 @@ p
 	justify-content: flex-start;
 	margin-bottom: 10px;
 	background-image: url("image/down.jpg");
-	background-position: center center;
+	background-position: center bottom;
 	background-size: cover;
 }
 
