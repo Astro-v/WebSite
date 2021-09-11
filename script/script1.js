@@ -2,12 +2,13 @@ let titreArticle = document.getElementsByClassName('titreArticle1');
 let texteArticle = document.getElementsByClassName('texte1');
 let background = document.getElementsByClassName('background_1');
 
+
 let dmc_setInterval_11;
 let dmc_setInterval_12;
 let bool = true;
 background[0].style.marginTop = '0px';
 window.addEventListener('scroll', function() {
-	if (this.scrollY > 800 && bool) {
+	if (this.scrollY > screenH-280 && bool) {
 		bool = false;
 		titreArticle[0].style.marginTop = '800px';
 		titreArticle[0].style.opacity = '0';
@@ -25,7 +26,7 @@ window.addEventListener('scroll', function() {
 			}
 		},1);	
 	}
-	if (this.scrollY <= 800 && bool == false) {
+	if (this.scrollY <= screenH-280 && bool == false) {
 		bool = true;
 		dmc_setInterval_12 = setInterval(function() {
 			if (parseInt(titreArticle[0].style.marginTop,10)<800 && bool) {
@@ -41,8 +42,8 @@ window.addEventListener('scroll', function() {
 			}
 		},1);	
 	}
-	if (this.scrollY > 1100 && this.scrollY < 2400) {
-		background[0].style.marginTop = (this.scrollY-1080).toString();
+	if (this.scrollY > screenH && this.scrollY < screenH+screenH+20) {
+		background[0].style.marginTop = (this.scrollY-screenH+20).toString()+'px';
 		console.log((this.scrollY-1080).toString());
 	}
 	if (this.scrollY > 750 && this.scrollY < 900) {
