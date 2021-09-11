@@ -1,4 +1,4 @@
-const screenH = screen.height;
+const screenH = window.innerHeight;
 
 let head = document.getElementsByClassName('head');
 
@@ -6,7 +6,7 @@ head[0].style.height = screenH.toString()+'px';
 
 let article = document.getElementsByClassName('article');
 
-article[0].style.height = (screenH-80).toString()+'px';
+article[0].style.height = (screenH-100).toString()+'px';
 
 let text = document.getElementsByClassName('texte1');
 
@@ -14,4 +14,5 @@ text[0].style.marginTop = screenH+'px';
 
 let foot = document.getElementsByClassName('foot');
 
-foot[0].style.height = (screenH-80).toString()+'px';
+foot[0].style.height = (screenH-100).toString()+'px';
+console.log(parseInt(foot[0].style.height,10));
