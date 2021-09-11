@@ -174,36 +174,6 @@ bleu foncé #77B5FE
 }
 
 
-@media screen and (max-width:1000px)
-{
-	.head
-	{
-		height: 300px;
-	}
-	.middleHead
-	{
-		width: 100%;
-	}
-	.rightHead
-	{
-		display: none;
-	}
-	.pageTitle
-	{
-		font-size: 5em;
-	}
-
-	.profile
-	{
-		font-size: 1.5em;
-	}
-
-	.meContacterButton
-	{
-		font-size: 2em;
-	}
-}
-
 /* Section */
 
 section
@@ -220,18 +190,26 @@ section
 
 article
 {
+	width: 100%;
  	height: 1000px;
  	background-color: #DDDDDD;
+ 	margin: 10px 0 0 0;
 }
 
-.titreArticle
+.titreArticle1
 {
 	color: black;
 	padding: 10px 10px 10px 10px;
-	margin: 10px 0 10px 0;
+	margin-top: 500px;
 	border-radius: 10px;
+	opacity: 0;
 	text-align: center;
-	font-size: 2em;
+	font-size: 5em;
+}
+
+.texte1
+{
+	margin-top: 500px;
 }
 
 .procedure
@@ -340,7 +318,8 @@ p
 
 .foot
 {
-	height: 200px;
+	height: 1000px;
+	width: 100%;
 	background-color: #303030;
 	display: flex;
 	flex-direction: column;
