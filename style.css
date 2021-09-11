@@ -77,7 +77,7 @@ bleu foncé #77B5FE
 
 .name:hover
 {
-	color: white;
+	color: rgb(140, 140, 140);
 }
 
 .contact
@@ -100,7 +100,7 @@ bleu foncé #77B5FE
 
 .info:hover
 {
-	color: #77B5FE;
+	color: rgb(140, 140, 140);
 }
 
 @media screen and (max-width:1000px)
@@ -191,7 +191,7 @@ bleu foncé #77B5FE
 
 .decouvrirButton:hover
 {
-	background-color: #5795DE;
+	background-color: rgb(180, 180, 180);
 }
 
 
