@@ -214,7 +214,7 @@ article
 	width: 100%;
  	height: 2000px;
  	background-color: #DDDDDD;
- 	margin: 10px 0 10px 0;
+ 	margin-bottom: 10px;
 }
 
 .titreArticle1
@@ -353,7 +353,7 @@ p
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	margin: 0 0 0 0;
+	margin-bottom: 10px;
 	background-image: url("image/down.jpg");
 	background-position: center center;
 	background-size: cover;

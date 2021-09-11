@@ -42,11 +42,12 @@ window.addEventListener('scroll', function() {
 			}
 		},1);	
 	}
-	if (this.scrollY > screenH && this.scrollY < screenH+screenH+20) {
-		background[0].style.marginTop = (this.scrollY-screenH+20).toString()+'px';
-		console.log((this.scrollY-1080).toString());
+	if (this.scrollY >= screenH-80 && this.scrollY < screenH+screenH+20) {
+		article[0].style.marginTop = (this.scrollY-screenH+80).toString()+'px';
+	} else if (this.scrollY < screenH-80) {
+		article[0].style.marginTop = '0px';
 	}
-	if (this.scrollY > 750 && this.scrollY < 900) {
+	if (this.scrollY > screenH && this.scrollY < 900) {
 		texteArticle[0].style.opacity = (this.scrollY-750)/150;
 	}
 });
