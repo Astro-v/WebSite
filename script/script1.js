@@ -1,6 +1,4 @@
-let titreArticle = document.getElementsByClassName('titreArticle1');
-let texteArticle = document.getElementsByClassName('texte1');
-let background = document.getElementsByClassName('background_1');
+
 
 
 let dmc_setInterval_11;
@@ -9,30 +7,39 @@ let dmc_setInterval_13;
 let dmc_setInterval_14;
 let bool_1 = true;
 let bool_2 = true;
-background[0].style.marginTop = '0px';
+
 window.addEventListener('scroll', function() {
-	if (this.scrollY >= screenH-80 && this.scrollY < screenH+screenH-80) {
-		article[0].style.marginTop = (this.scrollY-screenH+80).toString()+'px';
-	} else if (this.scrollY < screenH-80) {
-		article[0].style.marginTop = '0px';
+
+	/* Article 1 */
+	for (let i = 0; i < article.length; ++i){
+		if (this.scrollY >= (2*i+1)*(screenH-80) && this.scrollY < (2*i+2)*(screenH-80)) {
+			backTest[i].style.top = '80px';
+			backTest[i].style.position = 'fixed';
+			backTest[i].style.marginTop = '0px';
+		} else if (this.scrollY >= (2*i+2)*(screenH-80)) {
+			backTest[i].style.position = 'static';
+			backTest[i].style.marginTop = (screenH-80).toString()+'px';
+		} else {
+			backTest[i].style.position = 'static';
+			backTest[i].style.marginTop = '0px';
+		}
 	}
-	if (this.scrollY > screenH-screenH/4 && bool_1) {
+	/* Titre 1 */
+
+	/*if (this.scrollY > screenH-screenH/4) {
 		bool_1 = false;
 		titreArticle[0].style.marginTop = '1000px';
 		titreArticle[0].style.opacity = '0';
-		dmc_setInterval_11 = setInterval(function() {
-			if (parseInt(titreArticle[0].style.marginTop,10)>50 && bool_1 == false) {
-				titreArticle[0].style.marginTop = (parseInt(titreArticle[0].style.marginTop,10)-4).toString()+'px';
-			} else {
-				titreArticle[0].style.marginTop = '50px';
-			}
-			if (titreArticle[0].style.opacity<1 && bool_1 == false ) {
-				titreArticle[0].style.opacity = (parseFloat(titreArticle[0].style.opacity,10)+4/(1000-50)).toString();
-			} else {
-				titreArticle[0].style.opacity = '1';
-				clearInterval(dmc_setInterval_11);
-			}
-		},1);	
+		if (parseInt(titreArticle[0].style.marginTop,10)>50 && bool_1 == false) {
+			titreArticle[0].style.marginTop = (parseInt(titreArticle[0].style.marginTop,10)-4).toString()+'px';
+		} else {
+			titreArticle[0].style.marginTop = '50px';
+		}
+		if (titreArticle[0].style.opacity<1 && bool_1 == false ) {
+			titreArticle[0].style.opacity = (parseFloat(titreArticle[0].style.opacity,10)+4/(1000-50)).toString();
+		} else {
+			titreArticle[0].style.opacity = '1';
+		}
 	}
 	if (this.scrollY <= screenH-screenH/4 && bool_1 == false) {
 		bool_1 = true;
@@ -83,6 +90,6 @@ window.addEventListener('scroll', function() {
 				clearInterval(dmc_setInterval_14);
 			}
 		},1);	
-	}
+	}*/
 });
 

@@ -1,18 +1,26 @@
 const screenH = window.innerHeight;
 
+let titreArticle = document.getElementsByClassName('titreArticle');
+let texteArticle = document.getElementsByClassName('texteArticle');
+let backTest = document.getElementsByClassName('backTest');
 let head = document.getElementsByClassName('head');
-
-head[0].style.height = screenH.toString()+'px';
-
 let article = document.getElementsByClassName('article');
-
-article[0].style.height = (screenH-100).toString()+'px';
-
-let text = document.getElementsByClassName('texte1');
-
-text[0].style.marginTop = screenH+'px';
-
 let foot = document.getElementsByClassName('foot');
 
-foot[0].style.height = (screenH-100).toString()+'px';
-console.log(parseInt(foot[0].style.height,10));
+head[0].style.height = screenH.toString()+'px';
+for (let i = 0; i < backTest.length; ++i) {
+	backTest[i].style.height = (screenH-80).toString()+'px';
+	backTest[i].style.marginTop = '0px';
+}
+
+for (let i = 0; i < article.length; ++i) {
+	article[i].style.height = (2*(screenH-80)).toString()+'px';
+}
+
+for (let i = 0; i < texteArticle.length; ++i) {
+	texteArticle[i].style.marginTop = '0px';
+}
+
+
+
+foot[0].style.height = (screenH-80).toString()+'px';

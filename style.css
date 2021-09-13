@@ -48,13 +48,23 @@ gris #303030
 bleu foncé #77B5FE
 */
 
+.grey
+{
+	background-color: #DDDDDD;*/
+}
+
+.white
+{
+	background-color: white;
+}
+
 /* Navigation bar */
 .nav
 {
 	opacity: 1;
 	height: 80px;
 	width: 100%;
-	background-color: rgba(221, 221, 221,0);
+	background-color: rgba(200, 200, 200,0);
 	color:  white;
 	position: fixed;
 	top: 0px;
@@ -62,6 +72,7 @@ bleu foncé #77B5FE
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	z-index=10;
 }
 
 .name
@@ -132,7 +143,6 @@ bleu foncé #77B5FE
 	width: 100%;
 	background-repeat: no-repeat;
 	background-size: cover;
-	margin-bottom: 10px;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -199,7 +209,7 @@ bleu foncé #77B5FE
 
 section
 {
-	width: 95%;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -212,24 +222,23 @@ section
 article
 {
 	width: 100%;
- 	background-color: #DDDDDD;
- 	margin-bottom: 10px;
+	z-index=5;
 }
 
-.titreArticle1
+.titreArticle
 {
+	z-index=5;
 	font-family: Disco;
 	color: black;
 	padding: 10px 10px 10px 10px;
-	margin-top: 800px;
-	opacity: 0;
+	opacity: 1;
 	text-align: center;
 	font-size: 5em;
 }
 
-.texte1
+.texteArticle
 {
-	margin-top: 500px;
+	z-index=5;
 }
 
 .procedure
@@ -239,11 +248,13 @@ article
 	align-items: center;
 }
 
-.background_1
+.backTest
 {
 	display: flex;
 	flex-direction: column;
 	margin-top: 0px;
+	height: 1000px;
+	z-index=5;
 }
 
 p
@@ -351,7 +362,6 @@ p
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	margin-bottom: 10px;
 	background-image: url("image/down.jpg");
 	background-position: center bottom;
 	background-size: cover;
